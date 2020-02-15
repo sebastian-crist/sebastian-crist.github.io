@@ -19,12 +19,17 @@ address{
   border: solid 1px;
   position: relative;
   top: -25px;
-  left: 200px;
+  left: 539px;
+}
+
+body{
+  margin:5% auto;
+  width: 80%;
 }
 
 div{
-  width: 550px;
-  height: 130px;
+  width: 1050px;
+  height: 80px;
   margin-bottom: 10px;
   background-color: #add8e6;
 }
@@ -44,6 +49,13 @@ a:link{
 }
 
 a:hover{
-color:Blue;
+color:green;
 text-decoration: underline;
+}
+
+img{
+  margin: 0 0 15px 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
 }
