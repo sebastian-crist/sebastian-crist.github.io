@@ -1,0 +1,51 @@
+.name-class {
+  text-align: center;
+  margin-bottom: 0px;
+  color: blue;
+}
+
+body{
+  font-family: Serif;
+  color: black;
+}
+
+address{
+  text-align: center;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  height: 90px;
+  border: solid 1px;
+  position: relative;
+  top: -25px;
+  left: 100px;
+}
+
+div{
+  width: 550px;
+  height: 130px;
+  margin-bottom: 10px;
+  background-color: #add8e6;
+}
+
+.table-data{
+  text-align: right;
+}
+
+.font-class{
+  font-family: 'Galada', cursive;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;}
+}
+
+a:link{
+  color:darkred;
+  text-decoration: none;
+}
+
+a:hover{
+color:Blue;
+text-decoration: underline;
+}
