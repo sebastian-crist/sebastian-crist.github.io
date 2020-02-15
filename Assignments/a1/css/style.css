@@ -19,7 +19,7 @@ address{
   border: solid 1px;
   position: relative;
   top: -25px;
-  left: 539px;
+  left: 439px;
 }
 
 body{
@@ -57,5 +57,26 @@ img{
   margin: 0 0 15px 0;
   display: inline-block;
   vertical-align: top;
-  width: 25%;
+}
+
+table{
+  margin-bottom: 30px;
+}
+tr{
+  background-color:  #fcfcf6 ;
+  background-color:  #fafbf9;
+
+  border-bottom: solid 1px #000000;
+}
+  td{
+  border: solid 1px;
+  padding:10px;
+}
+
+td.dates{
+  background-color: #add8e6;
+  color:#000000;
+}
+footer{
+  margin-left:30%;
 }
