@@ -16,10 +16,9 @@ address{
   padding: 0px;
   width: 200px;
   height: 90px;
-  border: solid 1px;
   position: relative;
   top: -25px;
-  left: 439px;
+  left: 470px;
 }
 
 body{
@@ -29,10 +28,13 @@ body{
 
 div{
   width: 1050px;
-  height: 80px;
+  height: 90px;
   margin-bottom: 10px;
   background-color: #add8e6;
+  border: solid 1px;
+  padding: 5px;
 }
+
 
 .table-data{
   text-align: right;
@@ -44,36 +46,42 @@ div{
 }
 
 a:link{
-  color:darkred;
+  color:darkgreen;
   text-decoration: none;
 }
 
 a:hover{
-color:green;
+color:red;
 text-decoration: underline;
 }
 
 img{
-  margin: 0 0 15px 0;
+  margin: 0px;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  top: -95px;
+  left: -210px;
+  float: right;
+  border: 2px solid;
+  border-radius: 8px;
 }
 
 table{
   margin-bottom: 30px;
 }
 tr{
-  background-color:  #fcfcf6 ;
+  background-color:  #fcfcf6;
   background-color:  #fafbf9;
-
   border-bottom: solid 1px #000000;
 }
-  td{
+
+td{
   border: solid 1px;
   padding:10px;
 }
 
-td.dates{
+td.activity{
   background-color: #add8e6;
   color:#000000;
 }
