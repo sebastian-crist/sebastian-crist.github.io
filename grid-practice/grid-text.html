@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Grid Test</title>
-    <link rel="stylesheet" href="css/grid.css">
-  </head>
-  <body>
-    <div class = "main-wrapper">
-    <navigation class = "navigation">
-          <ul>
-            <li>Home</li>
-            <li>Destinations</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="utf-8">
+  <title>Grid Test</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <navigation class="navigation">
+      <ul>
+        <li>Home</li>
+        <li>Destinations</li>
+        <li>About Us </li>
+        <li>Contact</li>
+      </ul>
+      </nav>
     </navigation>
-    <section class = "logo">
-      <img src="photos/logo.png" alt="Logo" width="120" height="120">
+    <section class="logo">
+      <img src="photos/logo.png" alt="Logo">
     </section>
-    <section class = "main-section">
-      <img src="photos/homepage-photo.jpg" alt="Homepage"  >
+    <section class="main-section">
+      <img src="photos/homepage-photo.jpg" alt="Homepage">
+      <div class="main-section-txt">
+        <p> Adventure Awaits! </p>
+      </div>
     </section>
-    <section class = "destinations">
-      Destinations
+    <div class="gallery">
+      <div class="gallery-text">
+        <p> Choose a Destination: </p>
+      </div>
+      <a href="#bora">
+        <div class="vacation">
+          <img src="photos/bora.jpg" alt="Bora Bora"><p id="bora">
+          <div class="description">
+            Bora Bora
+          </div>
+        </div>
+      </a>
+      <a href="#hawaii">
+        <div class="vacation">
+          <img src="photos/hawaii.jpg" alt="Hawaii">
+          <div class="description">
+            Hawaii
+          </div>
+        </div>
+      </a>
+      <a href="#paris">
+        <div class="vacation">
+          <img src="photos/france.jpg" alt="Paris">
+          <div class="description">
+            Paris
+          </div>
+        </div>
+      </a>
+      <a href="#bahamas">
+        <div class="vacation">
+          <img src="photos/bahamas.jpg" alt="Bahamas">
+          <div class="description">
+            Bahamas
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="vacation-descriptions">
+      <div class="bora-bora">
+        <img src="photos/bora-bora-desc.jpg" alt="Bora Description">
+        <h1> Bora Bora </h1>
+        <p id = "hawaii"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      </div>
+      <div class="hawaii">
+        <img src="photos/hawaii.jpg" alt="Hawaii Description">
+        <h1> Hawaii </h1>
+        <p id="paris"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Bibendum enim facilisis
+          gravida neque convallis a. Elementum integer enim neque volutpat ac tincidunt vitae semper. Eget nunc lobortis mattis aliquam faucibus. Morbi enim nunc faucibus a pellentesque sit amet.</p>
+      </div>
+      <div class="paris">
+        <img src="photos/france.jpg" alt="Paris">
+        <h1> Paris </h1>
+        <p id="bahamas"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Bibendum enim facilisis
+          gravida neque convallis a. Elementum integer enim neque volutpat ac tincidunt vitae semper. Eget nunc lobortis mattis aliquam faucibus. Morbi enim nunc faucibus a pellentesque sit amet.</p>
+      </div>
+      <div class="bahamas">
+        <img src="photos/bahamas.jpg" alt="Bahamas">
+        <h1> Bahamas </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Bibendum enim facilisis gravida neque
+          convallis a. Elementum integer enim neque volutpat ac tincidunt vitae semper. Eget nunc lobortis mattis aliquam faucibus. Morbi enim nunc faucibus a pellentesque sit amet.</p>
+      </div>
+    </div>
+    <section class="about-us">
+
     </section>
-    <footer class = "footer">
+    <section class="contact-us">
+
+    </section>
+    <footer class="footer">
       Footer
     </footer>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
