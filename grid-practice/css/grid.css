@@ -86,24 +86,19 @@ div.gallery {
   background-color: lightgrey;
 }
 
-.gallery-text p{
-  position:absolute;
-  top: 90%;
-  left: 35%;
-  /* transform: translate(-50%, -50%); */
-
+.gallery-text h1{
   color: black;
-  font-size: 80px;
+  font-size: 60px;
   font-family: 'Caveat', cursive;
 }
 
 div.vacation{
   width: 200px;
   height: 200px;
-  margin: 6%;
+  margin: 4%;
   border: 2px solid;
   float: left;
-  margin-top: 170px;
+  margin-top: 0px;
   color:black;
 }
 
@@ -114,7 +109,6 @@ div.vacation{
 .vacation img{
   width: 200px;
   length: 200px;
-
 }
 
 div.description {
@@ -130,7 +124,6 @@ div.description {
   grid-row: 5/6;
   background-color: grey;
   gap: 4fr;
-
 }
 
 .bora-bora{
@@ -145,7 +138,7 @@ div.description {
   border: solid 1px;
   margin-right: 600px;
   text-align: center;
-  width: 50rem;
+  width: 35rem;
   length: auto;
   /* padding: 100px; */
 }
@@ -183,9 +176,9 @@ div.description {
   margin: 4rem;
   grid-column: 1/3;
   border: solid 1px;
-  margin-left: 700px;
+  margin-left: 500px;
   text-align: center;
-  width: 50rem;
+  width: 35rem;
   length: auto;
 }
 
@@ -201,7 +194,7 @@ div.description {
   border: solid 1px;
   margin-right: 600px;
   text-align: center;
-  width: 50rem;
+  width: 35rem;
   length: auto;
 }
 
@@ -238,24 +231,57 @@ h1{
   margin: 4rem;
   grid-column: 1/3;
   border: solid 1px;
-  margin-left: 700px;
+  margin-left: 500px;
   text-align: center;
-  width: 50rem;
+  width: 35rem;
   length: auto;
 }
 
 .about-us{
   grid-row: 6/7;
   grid-column: 1/13;
-  background-color: blue;
+  background-color: lightgrey;
+}
+
+.about-us p{
+  margin:5% auto;
+  width: 80%;
+}
+
+.about-us h1{
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+.about-us img{
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+  border: solid 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+br{
+  height:10%;
 }
 
 .contact-us{
   grid-row: 7/8;
   grid-column: 1/13;
-  background-color: aqua;
+  background-color: grey;
 }
 
+.contact-us h1{
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+.contact-us img{
+  height: 30%;
+  width: 30%;
+}
 .footer{
 background-color: orange;
 grid-column: 1/13;
