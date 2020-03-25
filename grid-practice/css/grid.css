@@ -278,12 +278,26 @@ br{
   font-size: 40px;
 }
 
-.contact-us img{
-  height: 30%;
-  width: 30%;
+.contact-form{
+  float: right;
+  margin: 0 0 0px;
+  padding: 0px;
+  width: 100%;
 }
+
 .footer{
-background-color: orange;
+background-color: darkgrey;
 grid-column: 1/13;
 grid-row: 8/8;
+height: 50%;
+}
+
+.footer p{
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+}
+
+min-width: 1200px Laptops (and langer){
+  
 }
