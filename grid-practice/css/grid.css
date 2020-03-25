@@ -13,7 +13,6 @@
 }
 
 .navigation{
-
 grid-column: 3/13;
 background-color: grey;
 display: flex;
@@ -41,6 +40,15 @@ align-items: stretch;
 .navigation ul li:hover{
   color:black;
   background-color: darkgrey;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:link{
+  color: black;
   text-decoration: none;
 }
 
@@ -299,5 +307,5 @@ height: 50%;
 }
 
 min-width: 1200px Laptops (and langer){
-  
+
 }
