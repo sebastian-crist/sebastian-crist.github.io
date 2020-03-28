@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dom Test</title>
+  </head>
+  <body>
+    <h1>DOM Test</h1>
+    <p> Blah blah </p>
+    <p class = "text-demo"></p>
+    <p class = "text-demo1">blah blah blah</p>
+    <p id = "test-id">This is a test</p>
+
+
+
+    <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".text-demo1").html("This is the new demo text");
+      $(".text-demo1").css("color","red");
+    });
+  </script>
+  </body>
+</html>
