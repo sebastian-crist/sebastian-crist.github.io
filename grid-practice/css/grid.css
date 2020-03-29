@@ -12,17 +12,22 @@
   width: 85%;
 }
 
+header{
+  grid-column: 1/13;
+  display: grid;
+}
+
 .navigation{
 grid-column: 3/13;
-background-color: grey;
+background-color: brown;
 display: flex;
 padding: 10px;
 justify-content:center;
-align-items: stretch;
+align-items: center;
 }
 
 .navigation ul{
-  display: flex;
+  display: block;
   list-style:none;
   /* margin:10px 0; */
   padding-right: 100px;
@@ -75,16 +80,16 @@ text-align: center;
 
 .main-section img{
   width: 100%;
-  height: 680px;
+  /* height: 680px; */
 }
 
 .main-section-txt p{
   position:absolute;
-  top: 70%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 80px;
+  font-size: 7rem;
   font-family: 'Caveat', cursive;
 }
 
@@ -94,9 +99,9 @@ div.gallery {
   background-color: lightgrey;
 }
 
-.gallery-text h1{
+.gallery-text h2{
   color: black;
-  font-size: 60px;
+  font-size: 4rem;
   font-family: 'Caveat', cursive;
 }
 
@@ -128,18 +133,15 @@ div.description {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(4, minmax(150px, auto));
-  grid-column: 1/13;
+  grid-column: 1fr;
   grid-row: 5/6;
   background-color: grey;
   gap: 4fr;
 }
 
-.bora-bora{
-  grid-column: 1/5;
-  grid-row: 1/2;
-}
 
-.bora-bora p{
+
+/* .bora-bora p{
   margin: 4rem;
   margin-left: 10rem;
   grid-column: 1/3;
@@ -148,10 +150,10 @@ div.description {
   text-align: center;
   width: 35rem;
   length: auto;
-  /* padding: 100px; */
-}
+  /* padding: 100px;
+} */
 
-.bora-bora img{
+/* .bora-bora img{
   max-width:30%;
   height:auto;
   float: right;
@@ -159,18 +161,15 @@ div.description {
   margin: 20px;
   border: solid 1px;
   position: relative;
-}
+} */
 
-.bora-bora h1{
+.bora-bora h2{
   text-align: center;
 }
 
-.hawaii{
-  grid-column: 1/5;
-  grid-row: 2/3;
-}
 
-.hawaii img{
+
+/* .hawaii img{
   max-width:30%;
   height:auto;
   float: left;
@@ -190,10 +189,7 @@ div.description {
   length: auto;
 }
 
-.paris{
-  grid-column: 1/5;
-  grid-row: 3/4;
-}
+
 
 .paris p{
   margin: 4rem;
@@ -214,18 +210,14 @@ div.description {
   margin: 20px;
   border: solid 1px;
   position: relative;
-}
+} */
 
-h1{
+h2{
   text-align: center;
 }
 
-.bahamas{
-  grid-column: 1/5;
-  grid-row: 4/4;
-}
 
-.bahamas img{
+/* .bahamas img{
   max-width:30%;
   height:auto;
   float: left;
@@ -243,7 +235,7 @@ h1{
   text-align: center;
   width: 35rem;
   length: auto;
-}
+} */
 
 .about-us{
   grid-row: 6/7;
@@ -256,7 +248,7 @@ h1{
   width: 80%;
 }
 
-.about-us h1{
+.about-us h2{
   font-family: 'Caveat', cursive;
   font-size: 40px;
 }
@@ -281,7 +273,7 @@ br{
   background-color: grey;
 }
 
-.contact-us h1{
+.contact-us h2{
   font-family: 'Caveat', cursive;
   font-size: 40px;
 }
@@ -306,14 +298,215 @@ height: 50%;
   padding: 10px;
 }
 
-@media only screen and (min-width: 480px) {
-  .vacation-descriptions{
-    grid-template-columns: 1fr 1fr;
+/* Small Viewport: */
+
+@media only screen and (min-width: 469px) {
+
+  .main-wrapper{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 0 0 0px;
+    width: 100%;
+    height: auto;
+    grid-gap: 0px;
   }
+
+  .main-section {
+    top: 5%;
+  }
+
+  .gallery-text h2{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+  }
+
+
+  div.vacation{
+    align-items: center;
+  }
+
+  .navigation{
+  /* grid-column: 3/13; */
+  /* display: flex; */
+  /* padding: 10px; */
+  justify-content:center;
+  align-items: center;
+  background-color: aqua;
+  width: 1fr;
+
+  }
+
+  .navigation ul{
+    display: block;
+    list-style:none;
+    /* margin:10px 0; */
+    /* padding-right: 10px; */
+    margin-top: 0px;
+  }
+
+  .navigation ul li{
+    /* line-height: 4rem; */
+    /* padding-left:.1rem; */
+    border: solid 1px;
+    padding: .1rem;
+    /* margin-right: 3rem; */
+  }
+
+  .main-section-txt p{
+    font-size: 2rem;
+  }
+  .vacation-descriptions{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* grid-column: 1/13; */
+  }
+
+  h2{
+    text-align: left;
+  }
+
+    /* .bora-bora{
+      grid-column: 1/5;
+      grid-row: 1/2;
+    } */
+
+    .bora-bora p{
+      border: 1px solid;
+      text-align: left;
+      display: block;
+      font-size: 1rem;
+      width: 30rem;
+      /* margin: 2rem; */
+      /* margin-left: 45%; */
+    }
+
+    .bora-bora img{
+      width: 30rem;
+      height: auto;
+    }
+
+    .hawaii{
+      grid-column: 1/5;
+      grid-row: 2/3;
+    }
+
+    .hawaii p{
+      border: 1px solid;
+      text-align: left;
+      display: block;
+      font-size: 1rem;
+      width: 30rem;
+    }
+
+    .hawaii img{
+      width: 30rem;
+      height: auto;
+    }
+    .paris{
+      grid-column: 1/5;
+      grid-row: 3/4;
+    }
+
+    .paris p{
+      border: 1px solid;
+      text-align: left;
+      display: block;
+      font-size: 1rem;
+      width: 30rem;
+    }
+
+    .paris img{
+      width: 30rem;
+      height: auto;
+    }
+
+    .bahamas{
+      grid-column: 1/5;
+      grid-row: 4/4;
+    }
+
+    .bahamas p{
+      border: 1px solid;
+      text-align: left;
+      display: block;
+      font-size: 1rem;
+      width: 30rem;
+    }
+
+    .bahamas img{
+      width: 30rem;
+      height: auto;
+    }
+
+
+
+
+
+
+
 }
 
 
+/* Medium Viewport: */
+
 @media only screen and (min-width: 769px) {
+
+.main-wrapper{
+  grid-template-rows: 120px repeat(7, minmax(150px, auto));
+}
+
+.main-section{
+  top: 0%;
+}
+
+.navigation{
+/* grid-column: 3/13; */
+/* display: flex; */
+/* padding: 10px; */
+justify-content:center;
+align-items: center;
+background-color: blue;
+width: 1fr;
+}
+
+.navigation ul li{
+  /* line-height: 4rem; */
+  /* padding-left:.1rem; */
+  border: solid 1px;
+  padding: .5rem;
+  margin-right: 3rem;
+}
+
+.navigation ul{
+  display: flex;
+  list-style:none;
+  /* margin:10px 0; */
+  padding-right: 10px;
+  margin-top: 0px;
+}
+
+.main-section-txt p{
+  font-size: 3rem;
+  bottom: 10%;
+}
+
+.gallery-text h2{
+  font-size: 3rem;
+}
+.vacation-descriptions{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-column: 1/13;
+}
+
+h2{
+  text-align: center;
+
+}
+
+  .bora-bora{
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
   .bora-bora p{
     margin: 1rem;
 
@@ -328,10 +521,148 @@ height: 50%;
   .bora-bora img{
     max-width:40%;
     height:auto;
-    grid-column: 4/4;
+    /* grid-column: 4/4; */
     border: solid 1px;
-    top: 15%;
+    top: 25%;
+    right: 4%;
+    /* margin: .1rem */
+    float: right;
+    position: relative;
+    margin: .5rem;
   }
+
+  .hawaii img{
+    max-width:40%;
+    height:auto;
+    float: left;
+    /* grid-column: 4/4; */
+    margin: 1rem;
+    border: solid 1px;
+    position: relative;
+    top: 20%;
+  }
+
+  .hawaii p{
+    /* margin: 1rem; */
+    /* grid-column: 1/3; */
+    border: solid 1px;
+    float: right;
+    width: 25rem;
+    length: auto;
+  }
+
+  .paris img{
+    max-width:40%;
+    height:auto;
+    /* grid-column: 4/4; */
+    border: solid 1px;
+    top: 25%;
+    right: 4%;
+    /* margin: .1rem */
+    float: right;
+    position: relative;
+  }
+
+  .paris p{
+    margin: 1rem;
+
+    grid-column: 1/3;
+    border: solid 1px;
+    float: left;
+    width: 25rem;
+    length: auto;
+  }
+
+  .bahamas p{
+    /* margin: 1rem; */
+    /* grid-column: 1/3; */
+    border: solid 1px;
+    float: right;
+    width: 25rem;
+    length: auto;
+  }
+
+  .bahamas img{
+    max-width:40%;
+    height:auto;
+    float: left;
+    /* grid-column: 4/4; */
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 20%;
+  }
+
+}
+
+/* Large Viewport: */
+
+@media only screen and (min-width: 992px) {
+
+  .main-wrapper{
+    background-color: white;
+    display: grid;
+    /* Columns: */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+
+    /* Rows: */
+    grid-template-rows: 100px repeat(7, minmax(150px, auto));
+    /* gap:  1px; */
+    margin: 1% auto;
+    width: 85%;
+  }
+
+  .main-section{
+    top: 0%;
+  }
+
+
+  .navigation{
+    background-color: purple;
+  }
+
+
+  .vacation-descriptions{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(150px, auto));
+    grid-column: 1fr;
+    grid-row: 5/6;
+    background-color: grey;
+    gap: 4fr;
+  }
+
+
+
+  .bora-bora p{
+    /* margin: 4rem; */
+    /* margin-left: 10rem; */
+    grid-column: 1/3;
+    border: solid 1px;
+    margin-right: 30rem;
+    text-align: center;
+    width: 35rem;
+    length: auto;
+    /* padding: 100px; */
+  }
+
+  .bora-bora img{
+    max-width:30%;
+    height:auto;
+    float: right;
+    grid-column: 4/4;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  .bora-bora h2{
+    text-align: center;
+  }
+
+
 
   .hawaii img{
     max-width:30%;
@@ -341,21 +672,65 @@ height: 50%;
     margin: 20px;
     border: solid 1px;
     position: relative;
+    top: 5%;
   }
 
   .hawaii p{
     margin: 4rem;
     grid-column: 1/3;
     border: solid 1px;
-    margin-left: 20rem;
+      margin-left: 20rem;
     text-align: center;
-    width: 25rem;
+    width: 35rem;
     length: auto;
   }
 
-}
 
 
-@media only screen and (min-width: 992px) {
+  .paris p{
+    grid-column: 1/3;
+    border: solid 1px;
+    margin-right: 30rem;
+    text-align: center;
+    width: 35rem;
+    length: auto;
+  }
+
+  .paris img{
+    max-width:30%;
+    height:auto;
+    float: right;
+    grid-column: 4/4;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+
+  .bahamas img{
+    max-width:30%;
+    height:auto;
+    float: left;
+    grid-column: 4/4;
+    /* margin: 20px; */
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  .bahamas p{
+    margin: 4rem;
+    grid-column: 1/3;
+    border: solid 1px;
+    margin-left: 20rem;
+    text-align: center;
+    width: 35rem;
+    length: auto;
+  }
 
 }
