@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Creme Brûlée</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <main>
+    <header>
+        <h1>Easy <span>5</span> minute<br>Creme Brûlée! <br> <span id= "serving" > For 7-8 </span> </h1>
+      </header>
+      <div class="intro">
+        <p>This super simple Creme Brûlée recipe is not only tasty, but it is sure to impress guests! The best part is how little ingredients it requires. Be sure to have a blow torch to melt the sugar on top!</p>
+        <img src="photos/creme.png" alt="Creme Brulee">
+      <button class="step1" type="button" name="start">Start</button>
+      </div>
+      <section class="ingredients hide">
+        <h2>Ingredients</h2>
+        <img src="photos/ingredients.png" alt="creme_ingredients">
+        <ul>
+          <li>1 Quart Heavy Whipping Cream</li>
+          <li>Vanilla extract</li>
+          <li>6 Egg Yolks</li>
+          <li>1/2 Cup Sugar</li>
+          <li>Love</li>
+        </ul>
+        <p class="ing">See Ingredients</p>
+        <button class="step2" type="button" name="next">Next</button>
+      </section>
+      <section class="Boil hide">
+        <h2>Boil</h2>
+        <img src="photos/boil.jpg" alt="Boil">
+        <p> Combine 1 quart heavy whipping cream in a pot with vanilla extract and bring to a boil. once it reaches a boil remove from heat and cool for 15 minutes. </p>
+        <button class="step3" type="button" name="next">Next</button>
+      </section>
+      <section class="Whisk hide">
+        <img src="photos/mixer.png" alt="Mixer">
+        <h2>Whisk</h2>
+        <p> Whisk together 6 egg yolks and 1/2 cup sugar until light and frothy</p>
+        <button class="step4" type="button" name="next">Next</button>
+      </section>
+      <section class="Combine hide">
+        <h2>Combine</h2>
+        <p>Slowly add the cream to the eggs and sugar until combined</p>
+        <img src="photos/combine.png" alt="combine">
+        <button class="step5" type="button" name="next">Next</button>
+      </section>
+      <section class="Bake hide">
+        <h2>Bake</h2>
+        <p>Pour into ramekins and bake in a water bath at 325F for 40-45 minutes</p>
+        <img src="photos/oven.png" alt="oven">
+        <button class="step6" type="button" name="next">Next</button>
+      </section>
+      <section class="Cool hide">
+        <h2>Cool</h2>
+        <p>Cool for at least 30 minutes. When ready to eat, take it out and let it come to room temp. and then add sugar to the top and brûlée!</p>
+        <img src="photos/creme brulee.png" alt="final">
+
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".step1").click(function(){
+        $(".intro").hide(1000);
+        $(".ingredients").show(1000);
+      });
+      $(".step2").click(function(){
+        $(".ingredients").slideUp();
+        $(".Boil").fadeIn();
+       });
+        $(".ing").mouseover(function(){
+        $(".ingredients img").toggle(1000);
+      });
+      $(".step3").click(function(){
+        $(".Boil").fadeOut();
+        $(".Whisk").css("text-align", "center");
+        $(".Whisk").show(1000);
+      });
+      $(".step4").mouseup(function(){
+        $(".Whisk").hide();
+        $(".Combine").slideDown();
+      });
+      $(".step5").click(function(){
+        $(".Combine").slideUp();
+        $(".Bake").fadeIn();
+      });
+      $(".step6").click(function(){
+        $(".Bake").fadeOut();
+        $(".Cool").show(1000);
+      });
+      $(".step6").click(function(){
+        $(".Cool").append('<p class=".Cool">Torch the top of the dessert until light brown and enjoy!</p>');
+      });
+    // End of scripts
+    });
+    </script>
+  </body>
+</html>

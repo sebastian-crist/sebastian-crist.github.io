@@ -1,0 +1,307 @@
+body{
+  background-color: white;
+  font-family: 'Oxigen', sans-serif;
+  line-height: 2rem;
+  color:#4b5343;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+main{
+  top center fixed;
+  background-size:cover;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0px;
+}
+
+.header{
+  width: 50%;
+}
+
+p, ul, li{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 1.5rem;
+}
+
+ul{
+  text-align: center;
+  margin: 0px 0px 0px;
+  padding: 0px 0px 0px;
+  font-size: 1rem;
+}
+
+.intro , .ingredients, .Boil, .Whisk, .Combine, .Bake  p{
+  text-align: center;
+}
+
+
+h1, .servings, .final{
+  font-family: 'Pacifico', cursive;
+}
+
+h1{
+  color:#af633c;
+  font-size:2.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+h1 span, .servings{
+  color: #8fc0af;
+}
+
+
+#serving{
+  font-size: 2rem;
+}
+
+h1 span{
+  font-size:3rem;
+}
+.hide{
+  display:none;
+}
+
+button{
+  background: #da8a5c;
+  /* padding:.5rem 1rem; */
+  font-size: 1rem;
+  color:#ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.clear{
+  clear: both;
+}
+.servings{
+  display:inline-block;
+  margin-top:3rem;
+}
+.intro{
+  font-size:1.5rem;
+  text-align: center;
+}
+
+img{
+  width: 20%;
+}
+
+.ing{
+  margin-left: 14rem;
+}
+
+
+.ingredients img{
+  position:absolute;
+  bottom:9rem;
+  width:40%;
+  display: none;
+}
+.ingredients p{
+  background: #bfab92;
+  display:table;
+  padding:0 .5rem;
+  font-size: 2rem;
+}
+
+h2{
+ margin: 0px;
+ text-align: center;
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Reenie Beanie', cursive;
+ font-size: 4rem;
+}
+
+.ingredients h2{
+  margin-bottom: 1.5rem;
+}
+
+.Bake img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.Cool p{
+  text-align: center;
+}
+
+.Cool img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Media Query */
+
+@media(min-width:700px){
+  main{
+    top: center fixed;
+    background-size:cover;
+    padding-left:10;
+  }
+
+  button{
+    background: #da8a5c;
+    /* padding:.5rem 1rem; */
+    font-size: 2rem;
+    color:#ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  p, ul, li{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Reenie Beanie', cursive;
+  }
+
+  .button{
+    display: block;
+  }
+
+  h1{
+
+    font-size: 3rem;
+    line-height: 3.5rem;
+    display: block;
+    text-align: center;
+  }
+
+  h1 span{
+    font-size:5rem;
+  }
+
+  header{
+    top: 20%;
+  }
+
+  .servings{
+    font-size: 2rem;
+    transform:rotate(-22deg);
+    display: flex;
+  }
+
+  .intro img{
+    width: 15%;
+    border-radius: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  .intro p{
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1fr;
+    width: 50%;
+  }
+
+  .Boil p{
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1fr;
+    width: 50%;
+  }
+
+  .ing {
+    margin-left: 40rem;
+  }
+
+  ul{
+    text-align: center;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+    font-size: 2rem;
+  }
+
+  .intro , .ingredients, .Boil, .Whisk, .Combine, .Bake  p{
+    text-align: center;
+  }
+
+  .ingredients h2{
+    margin-bottom: 2rem;
+  }
+
+  .ingredients img{
+    width:auto;
+    bottom:20rem;
+  }
+
+  .Boil img{
+    width: 10%;
+    height: auto;
+  }
+
+   h2{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 4rem;
+  }
+
+  .Whisk p{
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .Whisk img{
+    width: 15%;
+    height: auto;
+  }
+
+  .Combine, .Bake, .Whisk, .Cool p{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  .Bake img{
+    width: 15%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  .Cool p{
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1fr;
+    width: 50%;
+  }
+
+  .Cool img{
+    width: 15%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+}
