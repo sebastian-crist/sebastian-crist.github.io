@@ -12,18 +12,24 @@ a{
 
 }
 
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .navigation {
   align-items: center;
+  grid-column: 2/2;
 }
 
 .navigation ul {
   display: block;
   list-style: none;
-  margin-top: 0px;
+  margin: .5rem;
   color: white;
-  margin-left: 14rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  /* margin-left: 14rem; */
+  /* margin-right: 1rem; */
+  /* margin-top: 1rem; */
   font-family: 'Chelsea Market', cursive;
   text-align: right;
 }
@@ -38,6 +44,8 @@ a{
   background-color: #d3d3d3;
   text-decoration: none;
 }
+
+
 
 .Malta:hover {
   color: black;
@@ -68,10 +76,11 @@ a{
 }
 
 .logo img{
-  position: relative;
-  bottom: 20rem;
-  right: 4rem;
-  width: 20rem;
+  /* position: relative; */
+  /* bottom: 20rem; */
+  /* right: 4rem; */
+  /* width: 20%; */
+  grid-column: 1/1;
 }
 
 .hero-image{
