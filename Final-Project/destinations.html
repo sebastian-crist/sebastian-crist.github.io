@@ -71,52 +71,119 @@
             Privacy Policy Terms & Conditions</p>
       </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/themustafaomar/jsvectormap/dist/js/jsvectormap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/themustafaomar/jsvectormap/dist/maps/world.js"></script>
+    <script src="./js/jsvectormap.min.js"></script>
+    <script src="./js/world.js"></script>
 
     <script>
     var markers = [
-        { name: "My country (Egypt)", coords: [26.8206, 30.8025] },
-        { name: "Russia", coords: [61.524, 105.3188] },
-        { name: "Canada", coords: [56.1304, -106.3468] },
-        { name: "Greenland", coords: [71.7069, -42.6043] },
-        { name: "Brazil", coords: [-14.235, -51.9253] }
+        { name: "Florida", coords: [27.6648, -81.5158] },
+        { name: "Malta", coords: [35.9375, 14.3754] },
+        { name: "Canary Islands", coords: [28.0997, -15.4134] },
+        { name: "Dubai", coords: [25.2048, 55.2708] },
+        { name: "China", coords: [23.1291, 113.2644] },
+        { name: "Latvia", coords: [56.8796, 24.6032] },
+        { name: "Swtizerland", coords: [46.0037,  8.9511] },
       ];
 
-      var jsvmap = new JsVectorMap({
-        map: "world",
-        selector: "#map",
-        zoomButtons: true,
-
-        labels: {
-          markers: {
-            render: function(index) {
-              return markers[index].name;
-            }
-          }
-        },
-
-        markersSelectable: true,
-        selectedMarkers: markers.map((marker, index) => {
-          var name = marker.name;
-
-          if (name === "Russia" || name === "Brazil") {
-            return index;
-          }
-        }),
-        markers: markers,
-        markerStyle: {
-          initial: { fill: "#5c5cff" },
-          selected: { fill: "#ff5050" }
-        },
-        markerLabelStyle: {
-          initial: {
-            fontFamily: "Roboto",
-            fontWeight: 400,
-            fontSize: 13
-          }
+      var markers = [{
+        name: 'Florida',
+        coords: [27.6648, -81.5158],
+        style: {
+          fill: '#5c5cff'
         }
-      });
+      },
+      {
+        name: 'Malta',
+        coords: [35.9375, 14.3754],
+        style: {
+          fill: '#ff9251'
+        }
+      },
+      {
+        name: 'Canary Islands (Spain)',
+        coords: [28.0997, -15.4134],
+        style: {
+          fill: '#56de80'
+        }
+      },
+      {
+        name: 'Dubai',
+        coords: [25.2048, 55.2708],
+        style: {
+          fill: 'yellow'
+        }
+      },
+      {
+        name: 'China',
+        coords: [23.1291, 113.2644],
+        style: {
+          fill: 'purple'
+        }
+      },
+      {
+        name: 'Latvia',
+        coords: [56.8796, 24.6032],
+        style: {
+          fill: '#000'
+        }
+      },
+      {
+        name: 'Switzerland',
+        coords: [46.0037, 8.9511],
+        style: {
+          fill: 'red'
+        }
+      },
+      /* {
+        name: 'United States',
+        coords: [37.0902, -95.7129],
+        style: {
+          image: "../assets/images/marker.png"
+        },
+        offset: [2, 2]
+      }, */
+    ];
+
+    var map = new JsVectorMap({
+      map: 'world',
+      selector: '#map',
+      markersSelectable: true,
+      // markersSelectableOne: true,
+
+      onMarkerSelected(index, isSelected, selectedMarkers) {
+        console.log(index, isSelected, selectedMarkers);
+      },
+
+      // -------- Labels --------
+      labels: {
+        markers: {
+          render: function(index) {
+            return markers[index].name + '.';
+          },
+        },
+      },
+
+      // -------- Marker and label style --------
+      markers: markers,
+      markerStyle: {
+        hover: {
+          stroke: "#DDD",
+          strokeWidth: 3,
+          fill: '#FFF'
+        },
+        selected: {
+          fill: '#ff525d'
+        }
+      },
+      markerLabelStyle: {
+        initial: {
+          fontFamily: 'Poppins',
+          fontSize: 13,
+          fontWeight: 500,
+          fill: '#35373e',
+        },
+      },
+    })
     </script>
 
 

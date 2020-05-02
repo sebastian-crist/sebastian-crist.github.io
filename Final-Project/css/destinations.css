@@ -276,3 +276,7 @@ header{
     list-style: none;
     margin-top: 0px;
   }
+
+  .articles{
+    grid-column: 1/13;
+  }
