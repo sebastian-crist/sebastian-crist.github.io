@@ -162,7 +162,7 @@ header{
 }
 
 .hero-image{
-  background: url("../photos/hero-small.jpg") no-repeat; */
+  /* background: url("../photos/hero-small.jpg") no-repeat; */ */
   background-size: cover;
   background-position: center;
   grid-row: 1/3;
