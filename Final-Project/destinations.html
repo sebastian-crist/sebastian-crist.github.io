@@ -5,9 +5,11 @@
     <title>Sebastian Crist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/destinations.css">
+    <link rel="stylesheet" href="./css/jsvectormap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163781849-1"></script>
+
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -21,6 +23,7 @@
       <section class ="hero-image">
       <header>
         <nav class = "navigation">
+          <hr>
           <ul>
             <a href="index.html"><li>Home</li></a>
             <li>Destinations</li>
@@ -28,6 +31,7 @@
             <a href="contact-me.html"><li>Contact Me</li></a>
           </ul>
         </nav>
+          <div id="map"></div>
         <section class="logo">
           <img src="./photos/Glasses-white.png" alt="Logo">
         </section>
@@ -67,5 +71,54 @@
             Privacy Policy Terms & Conditions</p>
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/themustafaomar/jsvectormap/dist/js/jsvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/themustafaomar/jsvectormap/dist/maps/world.js"></script>
+
+    <script>
+    var markers = [
+        { name: "My country (Egypt)", coords: [26.8206, 30.8025] },
+        { name: "Russia", coords: [61.524, 105.3188] },
+        { name: "Canada", coords: [56.1304, -106.3468] },
+        { name: "Greenland", coords: [71.7069, -42.6043] },
+        { name: "Brazil", coords: [-14.235, -51.9253] }
+      ];
+
+      var jsvmap = new JsVectorMap({
+        map: "world",
+        selector: "#map",
+        zoomButtons: true,
+
+        labels: {
+          markers: {
+            render: function(index) {
+              return markers[index].name;
+            }
+          }
+        },
+
+        markersSelectable: true,
+        selectedMarkers: markers.map((marker, index) => {
+          var name = marker.name;
+
+          if (name === "Russia" || name === "Brazil") {
+            return index;
+          }
+        }),
+        markers: markers,
+        markerStyle: {
+          initial: { fill: "#5c5cff" },
+          selected: { fill: "#ff5050" }
+        },
+        markerLabelStyle: {
+          initial: {
+            fontFamily: "Roboto",
+            fontWeight: 400,
+            fontSize: 13
+          }
+        }
+      });
+    </script>
+
+
   </body>
 </html>
