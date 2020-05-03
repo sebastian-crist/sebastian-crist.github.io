@@ -102,9 +102,6 @@ header{
   grid-row: 1/1;
 }
 
-
-
-
 .footer{
   grid-row: 7/8;
   /* border: 1px dashed; */
@@ -113,3 +110,84 @@ header{
   position: relative;
   top: 50%;
 }
+
+@media only screen and (min-width: 900px) {
+
+  .main-wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(50px, auto));
+    grid-template-rows: 125px repeat(10, minmax(50px, auto));
+    margin: 1% auto;
+    width: 90%;
+
+  }
+
+  header{
+    grid-column: 1/13;
+    grid-row: 1/4;
+    grid-template-columns: repeat(4, minmax(50px, auto));
+    grid-template-rows: repeat(4, minmax(50px, auto));
+  }
+
+  .logo img{
+    /* position: relative; */
+    bottom: 50%;
+    /* right: 1rem; */
+    width: 70%;
+    grid-column: 1/1;
+  }
+
+
+  .hero-image{
+    background: url("../photos/malta-big.jpg") no-repeat;
+    background-position: top;
+    position: relative;
+    grid-row: 1/4;
+    grid-column: 1/13;
+    width: 100%;
+    height: 25rem;
+  }
+
+  .navigation {
+    align-items: center;
+    grid-column: 2/5;
+  }
+
+  .navigation ul li {
+    grid-column: 1/4;
+    border:  0px;
+    padding: .5rem;
+    /* margin-left: 2rem; */
+    margin-top: 2rem;
+    /* margin-bottom: 20%; */
+    margin-right: 3rem;
+    position: relative;
+    /* right: 20%; */
+
+  }
+
+  hr{
+    position: relative;
+    top: 60%;
+    right: 10%;
+    /* width: 50rem; */
+  }
+
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+  }
+
+  .articles p{
+    grid-column: 4/7;
+  }
+
+  .articles{
+    grid-row: 4/10;
+    grid-column: 1/13;
+  }
+
+  .footer{
+    grid-row: 10/11;
+  }
