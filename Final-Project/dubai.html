@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian Crist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/country.css">
+    <link rel="stylesheet" href="./css/ideal-image-slider.css">
+	  <link rel="stylesheet" href="./css/default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163781849-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163781849-1');
+    </script>
+    <style media="screen">
+	</style>
+  </head>
+  <body>
+    <div class = "main-wrapper">
+      <section class ="hero-image">
+      <header>
+        <nav class = "navigation">
+          <hr>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about-me.html"><li>About Me</li></a>
+            <li>Contact Me</li>
+          </ul>
+        </nav>
+        <section class="logo">
+          <img src="./photos/Glasses-white.png" alt="Logo">
+        </section>
+      </header>
+      </section>
+      <section class = "articles">
+        <h2> Dubai </h2>
+        <section class = "description">
+          <p> Dubai was the first real culture shock that I experienced moving abroad. It was something that I have never experienced before. At the time that we moved there, the city was not yet developed as much as it is now. The Burj Khalifa had just finished construction and this was the real start of the modernization that took place in Dubai. The weather was the hottest I have ever experienced, the dry heat was like no other. I was a little nervous going around the city with my brother and Dad because everything was so foreign to me. Additionally, the laws were extremely strict in Dubai and the cultural norms were drastically different from those in the US. I was not allowed to walk without a shirt and it was rude to show another person the sole of my foot when sitting down. Although it took time to get used to these cultural norms, Dubai had so much to offer. I remember fondly going to the mall and seeing the indoor skii facility that was state of the art. The school that I went to was international and brand new: it had its own planetarium! </p>
+        </section>
+        <div id="slider">
+          <img src="./photos/Dubai/Dubai1.jpg" data-src-2x="./photos/Dubai/Dubai1.jpg" alt="Slide 1" data-caption="Ready for School!"/>
+      		<img data-src="./photos/Dubai/Dubai2.jpg" alt="Slide 2" data-caption="Our School was Beauitful"/> />
+      		<img data-src="./photos/Dubai/Dubai3.jpg"  alt="Slide 3" data-caption="Still Playing Guitar"/>
+      		<img data-src="./photos/Dubai/Dubai4.jpg"  alt="Slide 4" data-caption="On our Way to Scuba Dive"/>
+          <img data-src="./photos/Dubai/Dubai5.jpg" alt="Slide 5" data-caption="My Favorite Experience Ever"/>
+          <img data-src="./photos/Dubai/Dubai6.jpg" alt="Slide 6" data-caption="Family Pic!"/>
+
+        </div>
+        <section class = "description2">
+        <p> While we were in Dubai, my brother, dad, uncle, and I went to get scuba certified which was a very unique experience. I was too young at the time to get certified officially, but I still did the training with them and even got to scuba dive in the 4th grade! </p>
+        </section>
+      </section>
+      <section class="footer">
+        <p> ©Into the Blue All rights reserved. FST #ST41395
+            Privacy Policy Terms & Conditions</p>
+      </section>
+    </div>
+    <script src="./js/ideal-image-slider.js"></script>
+    <script src="./js/iis-captions.js"></script>
+    <script>
+    var slider = new IdealImageSlider.Slider('#slider');
+    slider.addCaptions();
+    slider.start();
+    slider.start();
+	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $(".hero-image").css("background-image", "url('./photos/dubai-hero.jpg')");
+      $("#slider").css("height", "40rem");
+    });
+    </script>
+  </body>
+</html>

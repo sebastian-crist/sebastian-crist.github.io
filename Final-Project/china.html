@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian Crist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/country.css">
+    <link rel="stylesheet" href="./css/ideal-image-slider.css">
+	  <link rel="stylesheet" href="./css/default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163781849-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163781849-1');
+    </script>
+    <style media="screen">
+	</style>
+  </head>
+  <body>
+    <div class = "main-wrapper">
+      <section class ="hero-image">
+      <header>
+        <nav class = "navigation">
+          <hr>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about-me.html"><li>About Me</li></a>
+            <li>Contact Me</li>
+          </ul>
+        </nav>
+        <section class="logo">
+          <img src="./photos/Glasses-white.png" alt="Logo">
+        </section>
+      </header>
+      </section>
+      <section class = "articles">
+        <h2> China </h2>
+        <section class = "description">
+          <p> China was definitely an interesting experience for me. Towards the beginning of my stay there, my brother and I homeschooled because we did not find a suitable English speaking school. This proved to be very difficult. Staying organized and being taught by a teacher that came to our apartment proved to be quite inefficient. I felt like it was too disorganized and so we found a school that was a bit far away. One benefit of homeschooling that I think was really cool was the cultural immersion we had. My brother and I had assignments to go to various museums and cultural landmarks to do reports on them. This was the best way to immerse in the culture and truly learn about what China has to offer.  </p>
+        </section>
+        <div id="slider">
+          <img src="./photos/China/China1.jpg"  alt="Slide 1" data-caption="Adventures with my Dad!"/>
+      		<img data-src="./photos/China/China2.jpg" alt="Slide 2" data-caption="Bird Show"/> />
+      		<img data-src="./photos/China/China3.jpg"  alt="Slide 3" data-caption="Vacation in Sanya, China"/>
+      		<img data-src="./photos/China/China4.jpg"  alt="Slide 4" data-caption="Cultural Experiences"/>
+          <img data-src="./photos/China/China5.jpg" alt="Slide 5" data-caption="So Much Pollution"/>
+          <img data-src="./photos/China/China6.jpg" alt="Slide 6" data-caption="Soccer Continues"/>
+          <img data-src="./photos/China/China7.jpg" alt="Slide 7" data-caption="Nightime"/>
+          <img data-src="./photos/China/China8.jpg" alt="Slide 7" data-caption="My Brother Taking KungFu!"/>
+
+        </div>
+        <section class = "description2">
+        <p> For a school trip, my class and I got to go to Xi'an, China and visit the Terracotta Warriors! This was one of the coolest experiences I had the priveledge of going on. The sheer detail and culture that Xi'an has to offer is amazing. </p>
+        </section>
+      </section>
+      <section class="footer">
+        <p> ©Into the Blue All rights reserved. FST #ST41395
+            Privacy Policy Terms & Conditions</p>
+      </section>
+    </div>
+    <script src="./js/ideal-image-slider.js"></script>
+    <script src="./js/iis-captions.js"></script>
+    <script>
+    var slider = new IdealImageSlider.Slider('#slider');
+    slider.addCaptions();
+    slider.start();
+    slider.start();
+	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $(".hero-image").css("background-image", "url('./photos/china-hero.jpg')");
+      $("#slider").css("height", "40rem");
+    });
+    </script>
+  </body>
+</html>
