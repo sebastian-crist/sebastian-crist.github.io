@@ -1,94 +1,127 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Sebastian Crist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/destinations.css">
-    <link rel="stylesheet" href="./css/jsvectormap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163781849-1"></script>
 
-    <script>
+<head>
+  <meta charset="utf-8">
+  <title>Sebastian Crist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/destinations.css">
+  <link rel="stylesheet" href="./css/jsvectormap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163781849-1"></script>
+
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-163781849-1');
-    </script>
-  </head>
-  <body>
-    <div class = "main-wrapper">
-      <section class ="hero-image">
-      <header>
+  </script>
+</head>
 
-        <nav class = "navigation">
+<body>
+  <div class="main-wrapper">
+    <section class="hero-image">
+      <header>
+        <nav class="navigation">
+          <div class="socials">
+            <a href="https://www.facebook.com/sebastian.crist"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sebastian.crist"><i class="fa fa-instagram"></i></a>
+            <a href="  https://www.youtube.com/channel/UCuLpxglPrqUbmhxgH0Wz0GQ?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+          </div>
           <hr>
           <ul>
-            <a href="index.html"><li>Home</li></a>
+            <li><a href="index.html">Home</a></li>
             <li>Destinations</li>
-            <a href="about-me.html"><li>About Me</li></a>
-            <a href="contact-me.html"><li>Contact Me</li></a>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="contact-me.html">Contact Me</a></li>
           </ul>
         </nav>
-          <div id="map"></div>
+        <div id="map"></div>
         <section class="logo">
           <img src="./photos/Glasses-white.png" alt="Logo">
         </section>
       </header>
-      </section>
-      <section class = "articles">
-        <h2> Destinations </h2>
-        <a href="malta.html"><div class = "Malta">
+    </section>
+    <section class="articles">
+      <h2> Destinations </h2>
+      <div class="Malta">
+        <a href="malta.html">
           <p> Malta </p>
           <img src="./photos/malta.jpg" alt="Malta">
-          </a>
-        </div>
-      <div class = "Spain"><a href="spain.html">
+        </a>
+      </div>
+      <div class="Spain">
+        <a href="spain.html">
           <p> Spain </p>
           <img src="./photos/spain.jpg" alt="Spain">
         </a>
-        </div>
-        <div class = "Dubai"><a href="dubai.html">
+      </div>
+      <div class="Dubai">
+        <a href="dubai.html">
           <p> Dubai </p>
           <img src="./photos/dubai.jpg" alt="Dubai">
         </a>
-        </div>
-        <div class = "China"><a href="china.html">
+      </div>
+      <div class="China"><a href="china.html">
           <p> China </p>
           <img src="./photos/china.jpg" alt="China">
         </a>
-        </div>
-        <div class = "Latvia">
-          <p> Latvia </p>
-          <img src="./photos/latvia.jpg" alt="Latvia">
-        </div>
-        <div class = "Switzerland">
-          <p> Switzerland </p>
-          <img src="./photos/switzerland.jpg" alt="Switzerland">
-        </div>
-      </section>
-      <section class="footer">
-        <p> ©Into the Blue All rights reserved. FST #ST41395
-            Privacy Policy Terms & Conditions</p>
-      </section>
-    </div>
-    <script src="./js/jsvectormap.min.js"></script>
-    <script src="./js/world.js"></script>
+      </div>
+      <div class="Latvia">
+        <p> Latvia </p>
+        <img src="./photos/latvia.jpg" alt="Latvia">
+      </div>
+      <div class="Switzerland">
+        <p> Switzerland </p>
+        <img src="./photos/switzerland.jpg" alt="Switzerland">
+      </div>
+    </section>
+    <section class="footer">
+      <p> ©Into the Blue All rights reserved. FST #ST41395
+        Privacy Policy Terms & Conditions</p>
+    </section>
+  </div>
+  <script src="./js/jsvectormap.min.js"></script>
+  <script src="./js/world.js"></script>
 
-    <script>
-    var markers = [
-        { name: "Florida", coords: [27.6648, -81.5158] },
-        { name: "Malta", coords: [35.9375, 14.3754] },
-        { name: "Gran Canaria", coords: [28.0997, -15.4134] },
-        { name: "Dubai", coords: [25.2048, 55.2708] },
-        { name: "Guangzhou", coords: [23.1291, 113.2644] },
-        { name: "Riga", coords: [56.8796, 24.6032] },
-        { name: "Lugano", coords: [46.0037,  8.9511] },
-      ];
+  <script>
+    var markers = [{
+        name: "Florida",
+        coords: [27.6648, -81.5158]
+      },
+      {
+        name: "Malta",
+        coords: [35.9375, 14.3754]
+      },
+      {
+        name: "Gran Canaria",
+        coords: [28.0997, -15.4134]
+      },
+      {
+        name: "Dubai",
+        coords: [25.2048, 55.2708]
+      },
+      {
+        name: "Guangzhou",
+        coords: [23.1291, 113.2644]
+      },
+      {
+        name: "Riga",
+        coords: [56.8796, 24.6032]
+      },
+      {
+        name: "Lugano",
+        coords: [46.0037, 8.9511]
+      },
+    ];
 
-      var markers = [{
+    var markers = [{
         name: 'Florida',
         coords: [27.6648, -81.5158],
         style: {
@@ -187,8 +220,9 @@
         },
       },
     })
-    </script>
+  </script>
 
 
-  </body>
+</body>
+
 </html>
