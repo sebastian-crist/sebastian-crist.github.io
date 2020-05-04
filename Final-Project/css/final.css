@@ -110,6 +110,29 @@ header{
   width: 100%;
 }
 
+.fa-facebook-f:before {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+    top: 2rem;
+  right: 7rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: .1rem;
+}
+
+.fa-instagram:before{
+  font-size: 2rem;
+  color: white;
+  position: relative;
+    top: 2rem;
+  right: 7rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: .1rem;
+}
+
+
 .logo img{
   position: absolute;
   top: 12%;
